@@ -26,7 +26,7 @@
 
 ### 💜 Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mivinka1/mivinkamusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mivinka1/mivinkamusic-)
 
 Get pyrogram (p)  SESSION from here:
 
@@ -65,7 +65,7 @@ $ python3 -m DaisyXMusic
 - /resume - Відновлення призупиненого треку
 - /skip - Пропустити поточний трек
 - /end -  Припинення відтворення медіафайлів
-- /userbotjoin: Запросити @@xxdemonxbot бота до вашого чату
+- /userbotjoin: Запросити @xxdemonxbot бота до вашого чату
 - /userbotleave - remove assistant from your chat
 - /admincache: Оновлення адмінів у вашому чаті, якщо бот не розпізнає адміністратора
 - /musicplayer [on/off]: Увімкнення або вимкнення музичного програвача
