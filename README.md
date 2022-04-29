@@ -1,11 +1,11 @@
-<h1 align="center">DAISYX MUSIC V6.0 🎵</h1>
+<h1 align="centre">MIVINKA BOT V5.0 🎵</h1>
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
-#### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
-### Available on telegram as [@DaisyXbot](https://t.me/daisyxbot)
+#### POWERED BY [MIViNKA](https://github.com/mivinka1/)
+### Available on telegram as [@mivinka0](https://t.me/mivinka0)
 
 <p align="center">
-  <img src="https://telegra.ph/file/dd04b1968f1bc1169d162.jpg">
+  <img src="https://telegra.ph/file/a1c237679c68716f76b63.gif">
 </p>
 
 <h2> Features 🔥 </h2>
@@ -15,7 +15,7 @@
 - Current playback support
 - Showing track names when skipping
 - Zero downtime, Fully Stable
-- Youtube playback support
+- Deezer,Youtube & Saavn playback support
 - Settings panel
 - Control with buttons
 - Userbot auto join
@@ -26,121 +26,97 @@
 
 ### 💜 Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mivinka1/mivinkamusic)
 
-Get pyrogram (p)  `SESSION` from here:
+Get pyrogram (p)  SESSION from here:
 
-[![Run on Repl.it](https://repl.it/badge/github/Makoto-XD/Session-Generator)](https://replit.com/@Makoto-XD/Session-Generator)
+[![Run on Repl.it](https://repl.it/badge/github/mivinka1/GenerateStringSession)](https://replit.com/@mivinka1/GenerateStringSession)
 
-### ⚔ Self-hosting
-```sh
-# First Upgrade Your Terminal
-$ sudo su (if terminal not have root access)
-$ cd (if terminal not have root access)
-$ apt update && apt upgrade -y
-$ apt install python ffmpeg -y
-$ curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-$ apt install nodejs -y
-$ pip3 install -U pip
-$ npm i -g npm
-# Now Do Git Clone
-$ git clone https://github.com/TeamDaisyX/DaisyXmusic
+### ⚔ Self-hosting (For Devs) 
+sh
+# Install Git First (apt-get install git)
+$ git clone https://github.com/mivinka1/mivinkamusic
 $ cd DaisyXMusic
 # Upgrade sources
 # Install All Requirements 
 $ pip3 install -U -r requirements.txt
-# Now Edit example.env and enter your creds
-$ cp example.env .env
-# Now start the Bot
+# Fork This Repo and fill config.py vars with your own values.Then Start The Bot
 $ python3 -m DaisyXMusic
-```
 
-### Commands for Group 🛠
-#### For all in group
+Команди
 
-- `/play <song name>` - play song you requested
-- `/play <reply to audio>` - play replied file
-- `/ytplay <song name>`: Directly play song via Youtube Music
-- `/playlist` - Show now playing list
-- `/current` - Show now playing
-- `/song <song name>` - download songs you want quickly
-- `/search <query>` - search videos on youtube with details
-- `/video <song name>` - download videos you want quickly
+=>> Song Playing 
 
-#### Admins only.
-- `/player` - open music player settings panel
-- `/pause` - pause song play
-- `/resume` - resume song play
-- `/skip` - play next song
-- `/end` - stop music play
-- `/mute` - mute song play
-- `/unmute` - unmute song play
-- `/userbotjoin` - invite assistant to your chat
-- `/userbotleave` - remove assistant from your chat
-- `/admincache` - Refresh admin list
-- `/musicplayer [on/off]` - Enable/Disable Music Player
+- /play: - Відтворення медіа чату
+- /play [yt url] : - Відтворення за ссилкою YouTube
+- /splay: - Відтворення пісні через jio saavn
+- /ytplay: - Відтворювати пісню через Youtube Music
+- /playlist - Показати плейлист
+- /current - Показати поточний трек
+- /song [назва пісні]: Завантажити аудіо пісню з YouTube
+- /search [назва пісні]: Пошук пісень на YouTube
+- /deezer  [назва пісні]: Завантажити пісню з deezer
+- /saavn  [назва пісні]: Завантажити пісню з saavn
+- /video [назва пісні]: Завантажити відео пісню з YouTube -->
 
-### Commands for Channel Music Play 🛠
-For linked group admins only:
-- `/cplay <song name>` - play song you requested
-- `/cplay <reply to link>` - play replied youtube link
-- `/cplay <reply to audio>` - play replied file
-- `/cplaylist` - Show now playing list
-- `/cccurrent` - Show now playing
-- `/cplayer` - open music player settings panel
-- `/cpause` - pause song play
-- `/cresume` - resume song play
-- `/cskip` - play next song
-- `/cend` - stop music play
-- `/cmute` - mute song play
-- `/cunmute` - unmute song play
-- `/userbotjoinchannel` - invite assistant to your chat
-* channel is also can be used instead of c
+#### Лише для адміністраторів.
+- /player - Відкрити меню налаштувань програвача
+- /pause - Призупинити трек
+- /resume - Відновлення призупиненого треку
+- /skip - Пропустити поточний трек
+- /end -  Припинення відтворення медіафайлів
+- /userbotjoin: Запросити @@xxdemonxbot бота до вашого чату
+- /userbotleave - remove assistant from your chat
+- /admincache: Оновлення адмінів у вашому чаті, якщо бот не розпізнає адміністратора
+- /musicplayer [on/off]: Увімкнення або вимкнення музичного програвача
 
-If you donlt like to play in linked channel:
- 1. Get your channel ID.
- 2. Rename your group to: Channel Music: your_channel_id
- 3. Add @DaisyXBot as Channel admin with full perms
- 4. add helper to channel
- 5. Simply send commands in your group.
+=>> Відтворення музики каналу 
 
+ Лише для адміністраторів зв'язаних груп:
+
+- /cplay [назва пісні] - Відтворення
+- /csplay [назва пісні] - Відтворення через jio saavn
+- /cplaylist - Показати список відтворення
+- /cccurrent - Показати що зараз відтворюється
+- /cplayer - відкрити панель налаштувань музичного програвача
+- /cpause - призупинити відтворення пісні
+- /cresume - відновити відтворення пісні
+- /cskip - відтворити наступну пісню
+- /cend - зупинити відтворення музики
+- /userbotjoinchannel - Добавити ассистента у ваш чат
+
+
+Налаштування
+
+1) Видайте боту адмінку
+2) Почніть голосовий чат
+3) Впишіть /play [назва пісні]
+*) Якщо бот приєднався то насолоджуйтеся музикою, Якщо не додати @@xxdemonxbot до вашого чату повторіть ще раз
+
+Для відтворення музики каналу
+1) Видайте боту адмінку
+2) Надішліть /userbotjoinchannel  у зв'язаній групі
+3) Тепер надсилайте команди у зв'язаній групі
 ### Commands for Sudo Users ⚔️
-- `/userbotleaveall` - remove assistant from all chats
-- `/gcast <reply to message>` - globally brodcast replied message to all chats
-- `/pmpermit [on/off]` - enable/disable pmpermit message
+- /userbotleaveall - видалити помічника з усіх чатів
+- /gcast <реплей>  - глобально трансльоване повідомлення усім чатам
+- /pmpermit [on/off] - увімкнути/вимкнути повідомлення у приватні повідомлення
 
 #### Pmpermit
-- `.a` - approove someone to pm you
-- `.da` - disapproove someone to pm you
+- .a - approove someone to pm you
+- .da - disapproove someone to pm you
 + Sudo Users can execute any command in any groups
 
 
-## Special Credits
-- [Dan](https://github.com/delivrance) For [Pyrogram](https://github.com/pyrogram/pyrogram)
-- [Laky-64](https://github.com/Laky-64) For [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 
-### Inspiration
-- [Callsmusic](http://github.com/callsmusic/callsmusic)
-- [tgvc-userbot](https://github.com/callsmusic/tgvc-userbot)
+Also Mivinka Bot is inspired by many opensource bots and userbots
 
-#### Contributors
-- [InukaAsith](https://github.com/InukaAsith): Dev / Owner
-- [lucifeermorningstar](https://github.com/lucifeermorningstar): Dev / Owner
-- [Hellboy-OP](https://github.com/hellboy-op)
-- [Roj Serbest](http://github.com/rojserbest): Developer of callsmusic 
-- [DeshadeethThisarana](https://github.com/deshadeeth-thisarana): Dev
-- [Wrench](https://github.com/EverythingSuckz/): Dev
-- [Bemro](https://github.com/bemroofficial): Dev
-- [QueenArzoo](https://github.com/QueenArzoo): Dev
-- [Anjana-Ma](https://github.com/Anjana-Ma): Dev
-- [ImJanindu](https://github.com/ImJanindu): Dev
-- [azimazizov9150](https://github.com/azimazizov9150): Contributor
+
 
 
 ## Copyright & License 👮
-
- - Copyright (C) 2020-present by [TeamDaisyX](github.com/teamdaisyx) ❤️️
- - Licensed under the terms of the [MIT License](https://github.com/TeamDaisyX/DaisyXMusic/blob/master/LICENSE)
+- Copyright (C) 2020 - 2021 by [MIVINKA](github.com/mivinka1/) ❤️️
+ - Licensed under the terms of the [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007](https://github.com/mivinka1/mivinkamusic/blob/master/LICENSE)
     
-DaisyXMusic is Free Software: You can use, study share and improve it at your will. Specifically you can redistribute and/or modify it under the terms of the MIT License as published by the Free Software Foundation.    
-## Made with ♥️ by [TeamDaisyX](https://github.com/TeamDaisyX)
+Mivinka Bot is Free Software: You can use, study share and improve it at your will. Specifically you can redistribute and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.    
+## Made with ♥️ by [MIVINKA](https://github.com/mivinka1//)
